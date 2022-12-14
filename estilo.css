@@ -1,116 +1,144 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic);
+/* CSS Document */
 
-
-.mat-card{
-    border-radius: 32px;
-    margin: 10px 10px;
-    padding: 20px;
-    border-color: blueviolet;
+*{	
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	font-family: 'Vollkorn', serif;
 }
+body{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+12,000000+46,c14558+80,ddc7c7+100 */
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #000000 12%, #000000 46%, #c14558 80%, #ddc7c7 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #000000 12%,#000000 46%,#c14558 80%,#ddc7c7 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #000000 12%,#000000 46%,#c14558 80%,#ddc7c7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ddc7c7',GradientType=0 ); /* IE6-9 */
+	}
 
-.mat-card#first-card {
-    padding: 0;
+#nav{
+	background-color:brown;
+    height: 60px;	
+	width: 100%;
+	position: fixed; /* ¿el nav se ve siempre?*/
 }
-
-div#profile-background {
-    display: flex;
+#nav img{    
+    float: right; /* para poner la imagen a la derecha */
+}
+#nav ul{
+	height: 40px;
+	width: 900px;
+	list-style-type: none; /* para que no ponga viñetas en la lista */
     
 }
 
-div#profile-background img {
-    width: 100%;
-    
-    border-radius: 32px 32px 0 0;
+#nav ul li{
+    margin-top: 10px;  
+	float: left; /* para que cada icono este al lado del otro */
+}
+#contenedor{
+	height: auto;
+	width: 1000px;
+	margin: auto;
+}
+#banner{
+	height: 420px;
+	width: 1000px;
+	background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url("/img/mariposas.jpg");
 }
 
-.profile-image {
-    border-radius: 100%;
-    width: 152px;
-    height: 152px;
-    margin-top: -110px;
-    z-index: 1; /* la imagen la tengo adelante de la otra*/ 
+#fotoPerfil {
+	display: flex;
+	justify-content: center;
 }
 
-.btn-edit {    
-    display: inline-flex; /* PARA PONER EL LAPICITO AL LADO DE LA IMAGEN*/ 
+#fotoPerfil img{	
+	border-radius: 50%;   
+    margin-top: -320px;	
+   
 }
 
-div#info-actions {
-    display: flex;
+#botonera{	
+	margin-left: auto;
+	background-color: #ad3323;
+	height: 50px;
 }
 
-div#info-actions button {
-    margin-top: 8px;
+#botonera ul li{	
+	height: 50px;
+	width: 190px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	list-style-type: none;
+	
+	text-transform: uppercase;
+	text-shadow: 1px 0px 11px rgba(37, 55, 60, 0.8);
+	
+}
+#botonera ul li a{
+	font-size: 17px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #08151E;
+	text-decoration: none;
 }
 
-div#info-contact span {
-    font-size: 1rem;
-    font-weight: 400;
+
+#centro{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,962222+50,000000+100 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #962222 50%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #000000 0%,#962222 50%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #000000 0%,#962222 50%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	
+	height: 500px;
+	width: 1000px;
 }
 
-div#info-contact span a {
-    color: blue;
-    touch-action: manipulation;
-    text-decoration: none;
+.cajas{
+-webkit-border-radius: 16px;
+-moz-border-radius: 16px;
+border-radius: 16px;	
+	
+	margin-top: 80px;
+	margin-right: 50px;
+	margin-left: 50px;
+	padding: 10px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	background-color: #040C17;
+	float: left;
+	-webkit-box-shadow: 1px 0px 18px 0px rgba(255, 158, 129, 0.77);
+	-moz-box-shadow:    1px 0px 18px 0px rgba(255, 158, 129, 0.77);
+	box-shadow:         1px 0px 18px 0px rgba(255, 158, 129, 0.77);
 }
 
-div#info-company {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.25;
+.cajas h3{
+	font-size: 18px;
+	font-weight: 500;
+	color: #FFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-div#info-data {
-    display: flex;
-    justify-content:space-between;
-}
-
-div#info-data h1 {
-    font-size: 1.8rem;
-    display: inline;
-    font-weight: 500;
-    line-height: 1.25;
-    word-wrap: break-word;
-    word-break: break-word;
-}
-
-div#info-data ul#info-details {
-    width: 232px;
-    list-style: none;
-    flex-shrink: 0;
-}
-
-div#info-data ul#info-details li a {
-    color: black;
-    display: flex;
-    text-decoration: none;
-}
-
-div#info-data ul#info-details li a h2 {
-    font-size: 1rem;
-    font-weight: 500;
-    align-self: center;
-    vertical-align: baseline;
-}
-
-div#info-data ul#info-details li a img {
-    width: 55px;
-    height: 50px;
-    margin-right: 8px;
-}
-
-ul.items-list {
-    list-style: none inside;
-}
-
-ul.items-list li {
-    display: flex;
-    margin: 10px 0;
-}
-
-ul.items-list li div.data-container {
-    flex-grow: 1;
-}
-
-ul.items-list li div.data-container a {
-    display: flex;
+.cajas p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #e2ad82;
+	margin-right: 10px;
+	margin-left: 10px;
 }
