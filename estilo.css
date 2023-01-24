@@ -28,26 +28,26 @@ body{/* Permalink - use to edit and share this gradient: https://colorzilla.com/
 #nav img{    
     float: right; /* para poner la imagen a la derecha */
 }
-#nav ul{
+#nav #redes{
 	height: 40px;
-	width: 900px;
-	list-style-type: none; /* para que no ponga viñetas en la lista */
-    
+	width: 900px;  
+	  
 }
 
 #nav ul li{
     margin-top: 10px;  
 	float: left; /* para que cada icono este al lado del otro */
+	list-style-type: none; /* para que no ponga viñetas en la lista */
 }
 #contenedor{
 	height: auto;
-	width: 1000px;
+	width: 80%;
 	margin: auto;
 }
 #banner{
 	height: 420px;
-	width: 1000px;
-	background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75)),url("/img/mariposas.jpg");
+	width: 100%;
+	background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url("/img/mariposas.jpg");
 }
 
 #fotoPerfil {
@@ -64,18 +64,17 @@ body{/* Permalink - use to edit and share this gradient: https://colorzilla.com/
 #botonera{	
 	margin-left: auto;
 	background-color: #ad3323;
-	height: 50px;
+	height: 50px;	
 }
 
-#botonera ul li{	
-	height: 50px;
-	width: 190px;
-	float: left;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
-	list-style-type: none;
+
+#botonera ul li{
 	
+	float: left;	
+	height: 50px;	
+	margin-right: 5%;	
+	line-height: 50px;
+	list-style-type: none;	
 	text-transform: uppercase;
 	text-shadow: 1px 0px 11px rgba(37, 55, 60, 0.8);
 	
@@ -98,18 +97,16 @@ background: linear-gradient(to bottom,  #000000 0%,#962222 50%,#000000 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 	
 	height: 500px;
-	width: 1000px;
+	width: 100%;
 }
 
 .cajas{
 -webkit-border-radius: 16px;
 -moz-border-radius: 16px;
-border-radius: 16px;	
-	
-	margin-top: 80px;
-	margin-right: 50px;
-	margin-left: 50px;
-	padding: 10px;
+border-radius: 16px;		
+	margin: 80px 50px 0px 50px ;	
+	width: 90%;
+	height: auto;
 	border-top-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
@@ -125,8 +122,8 @@ border-radius: 16px;
 	box-shadow:         1px 0px 18px 0px rgba(255, 158, 129, 0.77);
 }
 
-.cajas h3{
-	font-size: 18px;
+.cajas h2{
+	font-size: 25px;
 	font-weight: 500;
 	color: #FFF;
 	margin-top: 10px;
@@ -141,4 +138,18 @@ border-radius: 16px;
 	color: #e2ad82;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+.mopc, .lauraB, .joaquin-gonzales, .bermejo{
+    width: 80px;
+    float: left;
+	margin: 5px 10px 20px 20px;
+}
+.experiencia-puesto, .educacion-instituto{
+	font-size: 23px;
+	color: #FFFFFF;
+}
+.experiencia-tiempo, .educacion-tiempo{
+	font-size: 20px;
+	color: #ddc7c7;
 }
